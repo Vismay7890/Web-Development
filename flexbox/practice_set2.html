@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding: 34px;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 0px 43px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 76px;
+        }
+
+        .left {
+            height: 34vh;
+            width: 40vw;
+            /* float: left; */
+            background-color: bisque;
+        }
+
+        .right {
+            height: 34vh;
+            width: 40vw;
+            /* float: right; */
+            background-color: darkgrey;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam autem eius magni rerum
+            asperiores laudantium atque optio quos in enim expedita eos quidem quis natus consectetur assumenda nisi,
+            iusto perferendis eveniet illo nobis? Reiciendis.</div>
+        <div class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad fugiat id sed quibusdam
+            nostrum, saepe quis iusto accusantium provident. Accusantium vel maxime dignissimos laborum soluta,
+            cupiditate, quas esse fuga delectus animi vitae. Perferendis repellendus voluptatum consequuntur accusantium
+            obcaecati sed ducimus magnam? Corporis, eveniet enim.</div>
+    </div>
+</body>
+
+</html>

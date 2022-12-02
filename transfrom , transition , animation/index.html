@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranformations</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            background-color: green;
+            height:50vh ;
+        }
+        .box{
+            /* border: 2px solid black; */
+            display: inline-block;
+             /* transform-origin: 0; */
+            /* transform: translate(34px , 56px); */
+            /* transform: scaleX(4); */
+            /* transform: scaleY(0); */
+            /* transform: skew(4deg,35deg); */
+            /* transform: rotateZ(45deg); */
+        }
+        img{
+            width:455px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+        /* img:hover{
+            width: 45px;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="naruto.jpg" alt="img">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click", ()=>{
+    myImage.style.width="546px";
+    })
+</script>
+</html>
